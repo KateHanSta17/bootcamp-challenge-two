@@ -1,3 +1,4 @@
+/* Custom Fonts imported from Fontshare */
 @import url('clash-display.css');
 
 h1 {
@@ -57,7 +58,7 @@ body, html {
     text-align: left;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 40px;
+    padding-left: 50px;
     max-width: 90%;
 }
 
@@ -72,8 +73,55 @@ body, html {
 .right-container img {
     max-width: 100%;
     height: auto;
+    border-radius: 20%;
 }
 
+/* Styling & CSS Animiation for image carousel */
+.image-carousel {
+    position: relative;
+    width: 523px; /* Set the desired width of the carousel */
+    height: 667px; /* Set the desired height of the carousel */
+    overflow: hidden; /* Hide overflow to keep the images within the carousel dimensions */
+}
+
+.image-carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 523px; /* Ensure all images are 523px wide */
+    height: 667px; /* Ensure all images are 667px high */
+    object-fit: cover; /* Ensure the images cover the entire area without stretching */
+    opacity: 0;
+    animation: carousel 20s infinite;
+}
+
+.image-carousel img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.image-carousel img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.image-carousel img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.image-carousel img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.image-carousel img:nth-child(5) {
+    animation-delay: 20s;
+}
+
+@keyframes carousel {
+    0%, 25% { opacity: 190; }
+    33.33%, 100% { opacity: 0; }
+}
+
+
+/* Footer styling begins here */
 .footer {
     display: flex;
     justify-content: space-between;
