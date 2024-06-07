@@ -1,46 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/style.css">
-    <title>Document</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./Assets/style.css">
+  <title>My Landing Page</title>
 </head>
 
-<header class="main-header">
-    <h1>This is the header</h1>
-    <p id="header-subheading">This is a subheading</p>
-    <section class="header-nav">
-        <nav>
-            <ul>
-                <li>
-                    <a href="link goes here">About Me</a>
-                </li>
-                <li>
-                    <a href="link goes here">Contact Us</a>
-                </li>
-                <li>
-                    <a href="link goes here">More Info</a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-</header>
-
 <body>
-    <main>
-        <section class="section-left">
-            Content on the left
+  <header>
+    <h1 class="header-title">🫧 Meet Kate 🫧</h1>
+    <nav class="text-right">
+      <ul>
+        <li> <a href="https://github.com/">Github</a></li>
+        <li> <a href="#">Portfolio</a></li>
+        <li> <a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-grid">
+    <section>
+    <h1 class="text-center">About Kate...</h1>
+    <figure>
+      <img src="./assets/images/image-1.png" alt="Graphic with Coming Soon text">
+      <figcaption class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</figcaption>
+    </section>
+    
+    <section>
+        <h1 class="text-center">About Kate...</h1>
+        <figure>
+          <img src="./assets/images/image-1.png" alt="Graphic with Coming Soon text">
+          <figcaption class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</figcaption>
         </section>
-        <section class="section-right">
-            Content on the right
-        </section>
-    </main>
+    </figure>
+    <section id="contact">
+      <h2 class="text-center">Contact Me</h2>
+      <form>
+        <ul>
+          <li>
+            <label class="text-right" for="name">Name:</label>
+            <input type="text" id="name" name="user-name">
+          </li>
+          <li>
+            <label class="text-right" for="email">Email:</label>
+            <input type="text" id="email" name="user-email">
+          </li>
+        </ul>
+        <div class="text-center">
+          <button type="submit">SEND</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center">
+    © 2024 My New Website Productions 
+  </footer>
     
 </body>
-
-<footer>
-    This is the footer
-</footer>
 </html>
